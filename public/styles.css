@@ -1,0 +1,458 @@
+/* mobile version styles */
+
+@media (max-width: 768px) {
+  header,
+  h1,
+  .text,
+  .year,
+  .ambition,
+  .paragraph,
+  .email,
+  .details,
+  .detail {
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap: break-word;
+  }
+
+  header {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #second {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    position: static;
+    top: 10px;
+    display: block;
+  }
+
+  .text {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .ambition,
+  .paragraph,
+  .email,
+  .details,
+  .detail {
+    font-size: 1.4rem;
+  }
+
+  .email {
+    font-size: 1.8rem;
+  }
+
+  .email-form-group input,
+  .email-form-group textarea,
+  .email-submit {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mia-page .cugo,
+  .mia-page .mia-dog {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mia-page li button {
+    width: 50%;
+    max-height: 30px;
+    font-size: 12px;
+  }
+}
+
+/* General Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container to limit width */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Header styling */
+header {
+  text-align: left;
+  font-size: 3rem;
+  margin-left: 370px;
+}
+
+#header-link {
+  text-decoration: none;
+  color: #080;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: valkyrie_c4;
+}
+
+#header-link:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: #080;
+  font-family: valkyrie_c4;
+  margin-left: 370px;
+}
+
+#first {
+  font-family: valkyrie_c4;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+#second {
+  color: #aaf;
+  margin-left: 370px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 40px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.about {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+
+.about2 {
+  letter-spacing: 2px;
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.text {
+  color: #ccc;
+  font-size: 20px;
+  max-width: 40em;
+  margin-left: 360px;
+  padding: 5px;
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
+.about3 {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ccc;
+}
+
+.year {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: #ccc;
+  font-family: valkyrie_c4;
+  margin-left: 370px;
+}
+
+.year li {
+  margin-bottom: 10px;
+}
+
+.ambition {
+  color: #080;
+  font-size: 1.8rem;
+  font-family: valkyrie_c4;
+  margin-top: 30px;
+  margin-left: 370px;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: #ccc;
+  font-family: valkyrie_c4;
+  margin-left: 370px;
+  margin-bottom: 20px;
+}
+
+/* mia */
+
+.mia-page {
+  background-color: #f2efe7;
+}
+
+.mia-page .about-me {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.mia-page .welcome {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.mia-page .cugo {
+  display: block;
+  margin: 30px auto 0;
+}
+
+.mia-page .mia-dog {
+  margin-left: 10px;
+}
+
+.mia-page .contact {
+  display: block;
+  text-align: center;
+}
+
+.mia-page .up {
+  margin-top: 30px;
+}
+
+.mia-page .one {
+  margin-bottom: 10px;
+}
+
+.mia-page li button {
+  background-color: #666699;
+  color: white;
+  width: 9%;
+  text-align: left;
+  max-height: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* email */
+
+.email {
+  color: #080;
+  text-align: left;
+  font-family: valkyrie_c4;
+  font-size: 2.5rem;
+  margin-left: 100px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.email:hover {
+  border-bottom: 3px solid green;
+}
+
+.details {
+  color: #080;
+  font-family: valkyrie_c4;
+  margin-left: 100px;
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+
+.detail {
+  color: #ccc;
+  font-family: valkyrie_c4;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-left: 100px;
+}
+
+.email-form-group input,
+.email-form-group textarea {
+  width: 18%;
+  margin-left: 100px;
+  color: #333;
+  background-color: FAF7F0;
+  border-radius: 8px;
+  height: 30px;
+}
+
+.email-submit {
+  padding: 5px;
+  font-size: 1em;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-family: valkyrie_c4;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 18%;
+  font-size: 1.1rem;
+}
+
+/* for mariam sikharulidze link */
+.name-link {
+  text-decoration: none;
+}
+
+.name-link h1 {
+  display: inline;
+}
+
+.name-link:hover h1 {
+  border-bottom: 3px solid green;
+}
+
+.name-link:visited {
+  text-decoration: none;
+}
+
+/* search page */
+
+.search2 {
+  color: #080;
+  font-family: valkyrie_c4;
+  margin: 20px 0 0 370px;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  margin-left: 350px;
+}
+
+/* Search Bar */
+#search-bar {
+  width: 200%;
+  padding: 15px 15px 15px 40px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+  color: #333;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  transition: border-color 0.3s ease;
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+  color: #000;
+  font-weight: bold;
+}
+
+#books-heading {
+  color: #080;
+  margin-top: 120px;
+  font-family: valkyrie_c4;
+  margin-left: 370px;
+  font-size: 1.8rem;
+}
+
+/* Styling for the book images */
+.book-image {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-image:hover {
+  transform: scale(1.1);
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-image-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.book-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.book-image {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-text {
+  flex-grow: 1;
+  color: #ccc;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.book-item:hover .book-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.book-title {
+  font-size: 1.6rem;
+  color: #ccc;
+  margin-left: 50px;
+}
+
+#book-list {
+  padding: 40px 20px;
+  text-align: center;
+  margin-left: 350px;
+}
+
+.book-details {
+  font-size: 1.2rem;
+  margin-left: 50px;
+}
+
+hr {
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 370px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariam Sikharulidze - Books I've Read</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body id="home-page">
+
+
+  <header>
+    <div class="header-content">
+        <a href="/mariam-sikharulidze" id="header-link">MARIAM SIKHARULIDZE</a>
+
+    </div>
+  </header>
+  
+  <h1>BOOKS I'VE READ</h1> 
+
+  <hr>
+
+  <section id="book-list">
+    <ul>
+      <% books.forEach(book => { %>
+        <li class="book-item">
+          <a href="/book/<%= book.id %>" class="book-link">
+            <div class="book-content">
+              <div class="book-image-container">
+                <img class="book-image" src="/images/<%= book.image %>" alt="<%= book.title %> Image">
+              </div>
+              <div class="book-text">
+                <h2 class="book-title"><%= book.title %> - BY <%= book.author %></h2>
+                <p class="book-details">DATE READ: <%= book.dateRead %>. How strongly I recommend it: <%= book.rating %>/10</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      <% }); %>
+    </ul>
+  </section>
+  
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEARCH BOOKS</title>
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+</head>
+<body class="search-page">
+
+    <a href="/mariam-sikharulidze" class="name-link">
+        <h1 class="about">MARIAM SIKHARULIDZE</h1>
+    </a>
+
+    <h2 class="search2">SEARCH:</h2>
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Type to search..." />
+    </div>
+
+    <div id="search-results">
+        <ul id="results-list"></ul>
+    </div>
+
+    <script>
+        document.getElementById("search-bar").addEventListener("input", async function () {
+            let query = this.value.trim();
+
+            if (query.length === 0) {
+                document.getElementById("results-list").innerHTML = ""; // Clear results if empty
+                return;
+            }
+
+            let response = await fetch(`/search?q=${query}`);
+            let books = await response.json();
+
+            let resultsHTML = books.map(book => `
+                <li>
+                    <h3>${book.title}</h3>
+                    <p>by ${book.author}</p>
+                    <p>Rating: ${book.rating}</p>
+                    <p>Notes: ${book.notes || "No notes available"}</p>
+                    <p>Reading Date: ${book.reading_date}</p>
+                </li>
+            `).join('');
+
+            document.getElementById("results-list").innerHTML = resultsHTML;
+        });
+    </script>
+
+</body>
+</html>
