@@ -41,6 +41,10 @@ app.get("/mariam-sikharulidze", (req, res) => {
     res.render("miako.ejs");
   });
 
+  app.get("/demons", (req, res) => {
+    res.render("demons.ejs");
+  });
+
   app.get("/email", (req, res) => {
     res.render("email.me.ejs");
   });
