@@ -432,7 +432,7 @@ h1 {
   font-size: 1.6rem;
   color: #aaf;
   margin-left: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
 }
 
@@ -531,3 +531,20 @@ hr {
   font-family: Georgia, serif;
   margin-bottom: 20px;
 }
+
+/* home page notes */
+
+.book-notes{
+  color: #ccc;
+  width: 75%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  
+}
+
+.read-my-notes{
+  color: #aaf;
+  font-weight: bold;
+
+}
+

@@ -25,12 +25,14 @@
       <% books.forEach(book => { %>
         <li class="book-item">
           <div class="book-content">
+
             <div class="book-image-container">
-              <!-- Only the image is wrapped in <a> to make it clickable -->
               <a href="<%= book.title.toLowerCase() === 'demons' ? '/demons' : '/book/' + book.id %>">
                 <img class="book-image" src="/images/<%= book.image %>" alt="<%= book.title %> Image">
               </a>
             </div>
+
+            
             <div class="book-text">
               <h2 class="book-title"><%= book.title %> - BY <%= book.author %></h2>
               <div class="book-details">
@@ -39,12 +41,26 @@
                   <%= new Date(book.reading_date).toLocaleDateString('en-GB') %>. 
                   HOW STRONGLY I RECOMMEND IT: <%= book.rating %>/10
                 </p>
+
+                <% if (book.notes) { %>
+                  <p class="book-notes"><%= book.notes %></p>
+                <% } %>
+
+                <% if (book.notes) { %>
+                  <a href="<%= book.title.toLowerCase() === 'demons' ? '/demons' : '/book/' + book.id %>" class="read-my-notes">READ MY NOTES</a>
+                <% } %>
+
+
               </div>
             </div>
-          </div>
+            
+          </div>         
         </li>
       <% }); %>
+      
     </ul>
+
+    
   </section>
   
 

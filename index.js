@@ -71,7 +71,7 @@ app.get("/mariam-sikharulidze", (req, res) => {
 
 app.get("/", async (req, res) => {
   try {
-    const result = await db.query("SELECT title, author, rating, reading_date, image FROM books ORDER BY reading_date DESC");    
+    const result = await db.query("SELECT title, author, rating, reading_date, image, notes FROM books ORDER BY reading_date DESC");    
     res.render("index", { books: result.rows });
   } catch (err) {
     console.error(err);
