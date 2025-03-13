@@ -1,0 +1,23 @@
+[33mcommit ce7cc5f868cf42f71f2a851164db5c30aa8a51c4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Mariam Sikharulidze <mariam.sikha.22@gmail.com>
+Date:   Fri Mar 14 14:44:46 2025 +0400
+
+    Finished adding notes for the index.ejs page
+
+[33mcommit 12d1338909439200106765b6a9e6f69814c4e9ba[m
+Author: Mariam Sikharulidze <mariam.sikha.22@gmail.com>
+Date:   Wed Mar 12 22:53:02 2025 +0400
+
+    Added book notes and note links
+
+[33mcommit 9e94aa9c41d51c687e2470616e20c66ffa10ac89[m
+Author: Mariam Sikharulidze <mariam.sikha.22@gmail.com>
+Date:   Tue Mar 11 21:37:02 2025 +0400
+
+    Updated the book 'Demons' page with new notes and styled it.
+
+[33mcommit 1f2dcb57f5c2aa64c22a07b9ed52f40fd180b24d[m
+Author: Wakana <wakanichi13@gmail.com>
+Date:   Mon Mar 10 23:14:35 2025 +0400
+
+    Initial commit
