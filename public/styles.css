@@ -475,7 +475,7 @@ hr {
  margin-top: 30px;
 }
 
-.demons2{
+.ejs2{
   font-size: 35px;
   margin-left: 30px;
   letter-spacing: 1px;
@@ -484,19 +484,19 @@ hr {
 
 }
 
-.demons-container{
+.ejs-container{
   display: flex;
   align-items: left;
   
 }
 
-.demons-text {
+.ejs-text {
   display: flex;
   flex-direction: column;
   
 }
 
-.demons-text p {
+.ejs-text p {
    
   margin-top: 10px;
   margin-left: 30px;
@@ -505,7 +505,7 @@ hr {
   letter-spacing: 1px;
 }
 
-.demons3{
+.ejs3{
   color: #080;
   margin-left: 370px;
   margin-top: 50px;
@@ -513,7 +513,7 @@ hr {
   letter-spacing: 1px;
 }
 
-.demons4{
+.ejs4{
   color: #ccc;
   margin-top: 20px;
   margin-left: 370px;
@@ -522,7 +522,7 @@ hr {
   font-family: Georgia, serif;
 }
 
-.demons5{
+.ejs5{
   color: #ccc;
   margin-top: 20px;
   margin-left: 370px;

@@ -19,6 +19,7 @@
   <h1>BOOKS I'VE READ</h1> 
 
   <hr>
+ 
 
   <section id="book-list">
     <ul>
@@ -27,9 +28,12 @@
           <div class="book-content">
 
             <div class="book-image-container">
-              <a href="<%= book.title.toLowerCase() === 'demons' ? '/demons' : '/book/' + book.id %>">
+              <a href="<%= book.id != null ? '/book' + book.id : '/' %>">
+
+
                 <img class="book-image" src="/images/<%= book.image %>" alt="<%= book.title %> Image">
               </a>
+              
             </div>
 
             
@@ -44,6 +48,7 @@
 
                 <% if (book.notes) { %>
                   <p class="book-notes"><%= book.notes %></p>
+                
                 <% } %>
 
                 <% if (book.notes) { %>
@@ -56,6 +61,7 @@
             
           </div>         
         </li>
+       
       <% }); %>
       
     </ul>
