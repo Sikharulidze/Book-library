@@ -40,17 +40,62 @@ app.get("/mia", (req, res) => {
   res.render("miako.ejs");
 });
 
-app.get("/demons", (req, res) => {
-  res.render("demons.ejs");
+
+app.get("/book1", (req, res) => {
+  res.render("book1.ejs");
 });
 
-app.get("/dead", (req, res) => {
-  res.render("dead.ejs");
+app.get("/book2", (req, res) => {
+  res.render("book2.ejs");
+});
+
+app.get("/book3", (req, res) => {
+  res.render("book3.ejs");
+});
+
+app.get("/book4", (req, res) => {
+  res.render("book4.ejs");
+});
+
+
+app.get("/book5", (req, res) => {
+  res.render("book5.ejs");
+});
+
+
+app.get("/book6", (req, res) => {
+  res.render("book6.ejs");
+});
+
+app.get("/book7", (req, res) => {
+  res.render("book7.ejs");
 });
 
 app.get("/book8", (req, res) => {
   res.render("book8.ejs");
 });
+
+app.get("/book9", (req, res) => {
+  res.render("book9.ejs");
+});
+
+app.get("/book10", (req, res) => {
+  res.render("book10.ejs");
+});
+
+app.get("/book11", (req, res) => {
+  res.render("book11.ejs");
+});
+
+app.get("/book12", (req, res) => {
+  res.render("book12.ejs");
+});
+
+app.get("/book13", (req, res) => {
+  res.render("book13.ejs");
+});
+
+
 
 app.get("/email", (req, res) => {
   res.render("email.me.ejs");
