@@ -367,10 +367,23 @@ h1 {
 
 #books-heading {
   color: #080;
-  margin-top: 120px;
+  margin-top: 50px;
   font-family: valkyrie_c4;
   margin-left: 370px;
   font-size: 1.8rem;
+}
+
+#books-heading-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#books-heading-link:visited {
+  color: inherit;
+}
+
+#books-heading-link:hover h2 {
+  text-decoration: underline;
 }
 
 /* Styling for the book images */
@@ -544,15 +557,110 @@ hr {
 .book-notes{
   color: #ccc;
   width: 75%;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.2rem;
+  margin-bottom: 10px;
   
 }
 
 .read-my-notes{
   color: #aaf;
   font-weight: bold;
+  
 
 }
 
 
+.my-photos{
+  margin-left: 370px;
+ 
+  margin-top: 20px;
+
+}
+
+.my-photos2{
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.my-photos2:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+.ai{
+  margin-left: 370px;
+  color: #ccc;
+  font-family:valkyrie_c4;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#ai2{
+  color: #aaf;
+  text-decoration: none;
+}
+
+#ai2:hover {
+  text-decoration: underline;
+}
+
+.ai-text{
+  color: #ccc;
+  margin-left: 370px;
+  font-family:valkyrie_c4;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.ai-text2{
+  color: #ccc;
+  margin-left: 370px;
+  font-family:valkyrie_c4;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#ai-hr{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.home-books{
+  width: 400px;
+  margin-left: 370px;
+  margin-top: 20px;
+}
+
+.my-library{
+  color: #080;
+  margin-left: 370px;
+  font-family: valkyrie_c4;
+  padding-top: 30px;
+  letter-spacing: 2px;
+}
+
+.library{
+  margin-left: 370px;
+  margin-top: 30px;
+  width: 620px;
+  height: 300px;
+}
+
+
+.library {
+  transition: transform 0.3s ease;
+}
+
+.library:hover {
+  transform: scale(1.2); 
+  }
+
+
+  

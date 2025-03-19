@@ -47,9 +47,10 @@
                 </p>
 
                 <% if (book.notes) { %>
-                  <p class="book-notes"><%= book.notes %></p>
+                  <p class="book-notes"><%= book.notes.substring(0, 330) + '...'%></p>
                 
                 <% } %>
+                
 
                 <% if (book.notes) { %>
                   <a href="<%= book.title.toLowerCase() === 'demons' ? '/demons' : '/book/' + book.id %>" class="read-my-notes">READ MY NOTES</a>

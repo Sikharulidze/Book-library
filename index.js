@@ -40,6 +40,10 @@ app.get("/mia", (req, res) => {
   res.render("miako.ejs");
 });
 
+app.get("/ai", (req, res) => {
+  res.render("ai.ejs");
+});
+
 
 app.get("/book1", (req, res) => {
   res.render("book1.ejs");
@@ -94,6 +98,8 @@ app.get("/book12", (req, res) => {
 app.get("/book13", (req, res) => {
   res.render("book13.ejs");
 });
+
+
 
 
 
