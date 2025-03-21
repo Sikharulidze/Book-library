@@ -406,7 +406,14 @@ h1 {
   margin-left: 0;
 }
 
-
+#load-more-button{
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 40px;
+}
 
 
 #search-bar {
