@@ -100,31 +100,38 @@ app.get("/book13", (req, res) => {
 });
 
 
-
-
-
 app.get("/email", (req, res) => {
   res.render("email.me.ejs");
 });
 
-app.get("/search", async (req, res) => {
+app.get("/search", (req, res) => {
+  res.render("search");
+});
+
+
+app.get('/api/search', async (req, res) => {
+  const query = req.query.q;
+  const page = parseInt(req.query.page) || 1; // Default to page 1 if no page query
+  const resultsPerPage = 5; // Number of results per page
+
+  if (!query) {
+    return res.json([]);
+  }
+
   try {
-    const searchQuery = req.query.q || "";
-    const query = `
-            SELECT * FROM books 
-            WHERE LOWER(title) LIKE LOWER($1) 
-            OR LOWER(author) LIKE LOWER($1)
-            ORDER BY reading_date ASC`;
-
-    const values = [`%${searchQuery}%`];
-    const result = await db.query(query, values);
-
-    res.render("search", { books: result.rows, query: searchQuery }); // Pass books to EJS
+    const offset = (page - 1) * resultsPerPage; // Calculate the offset based on the page number
+    const result = await db.query(
+      'SELECT title, image, notes FROM books WHERE notes ILIKE $1 LIMIT $2 OFFSET $3',
+      [`%${query}%`, resultsPerPage, offset]
+    );
+    res.json(result.rows);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Server Error" });
+    console.error('Error searching book notes:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+
 
 app.get("/", async (req, res) => {
   try {

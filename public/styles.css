@@ -237,6 +237,9 @@ h1 {
 
 .mia-page .one {
   margin-bottom: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .mia-page li button {
@@ -345,6 +348,67 @@ h1 {
 }
 
 /* Search Bar */
+
+.search-page {
+  font-family: Arial, sans-serif;
+}
+
+.search-page .search-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  margin-left: 370px;
+  width: 50%;
+}
+
+.search-page .search-results-container {
+  width: 50%;
+  margin-left: 370px;
+}
+
+.search-page #search-results {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.search-page .book-item {
+  padding: 5px 0;
+}
+
+.search-page .book-item img {
+  width: 50px;
+  height: auto;
+}
+
+.search-page .book-item div {
+  padding-left: 10px;
+}
+
+.search-page .book-separator {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.search-page .highlight {
+  background-color: yellow;
+}
+
+.search-page .book-notes{
+  color: #3C3D37;
+  width: 100%;
+}
+
+.search-page .book-title{
+  color: #3C3D37;
+  margin-left: 0;
+}
+
+
+
+
 #search-bar {
   width: 200%;
   padding: 15px 15px 15px 40px;
