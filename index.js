@@ -157,7 +157,11 @@ app.get("/book/:id", async (req, res) => {
 
     if (result.rows.length > 0) {
       const book = result.rows[0];
-      res.render("book", { book });
+
+      // Dynamically determine the correct EJS file (book1.ejs, book2.ejs, etc.)
+      const bookView = `book${bookId}`;
+
+      res.render(bookView, { book });
     } else {
       res.status(404).send("Book not found");
     }
@@ -166,6 +170,7 @@ app.get("/book/:id", async (req, res) => {
     res.status(500).send("Error retrieving book details");
   }
 });
+
 
 app.post("/add", async (req, res) => {
   const { title, author, rating, reading_date } = req.body;

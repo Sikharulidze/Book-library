@@ -53,7 +53,7 @@
                 
 
                 <% if (book.notes) { %>
-                  <a href="<%= book.title.toLowerCase() === 'demons' ? '/demons' : '/book/' + book.id %>" class="read-my-notes">READ MY NOTES</a>
+                  <a href="/book/<%= book.id %>" class="read-my-notes">READ MY NOTES</a>
                 <% } %>
 
 
